@@ -5,7 +5,7 @@ I have created this api as an Bridge Between miscrosoft computer vision api and 
 
 ---
 
-- ## *** There are 5 endpoints for using these API ***
+- ## There are 5 endpoints for using these API 
     - ***Describe Image***: We can use this to get breif description of the image, In this case we can either upload the image or we can give the url of the image.
         - **URL**- 174.138.55.228:3030/describe
         - **Method** - *Post*
@@ -16,7 +16,7 @@ I have created this api as an Bridge Between miscrosoft computer vision api and 
             }
         }
         - ***Sample Response* 
-            `
+            ```
                         {
                     "tags": [
                         "outdoor",
@@ -60,4 +60,4 @@ I have created this api as an Bridge Between miscrosoft computer vision api and 
                     }
                 }
          
-         `
+         ```
