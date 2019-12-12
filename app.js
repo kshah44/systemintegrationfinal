@@ -46,11 +46,11 @@ app.post('/describe'/*,auth*/,(req,res)=>{
         let file = req.files.photo.data;
         computerVisionClient.describeImageInStream(file)
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -64,7 +64,7 @@ app.post('/describe'/*,auth*/,(req,res)=>{
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -89,11 +89,11 @@ app.post('/analyzecategories'/*,auth*/,(req,res)=>{
         let file = req.files.photo.data;
         computerVisionClient.analyzeImageInStream(file)
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -107,7 +107,7 @@ app.post('/analyzecategories'/*,auth*/,(req,res)=>{
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -132,11 +132,11 @@ app.post('/analyzetags'/*,auth*/,(req,res)=>{
         let file = req.files.photo.data;
         computerVisionClient.analyzeImageInStream(file,{visualFeatures: ['Tags']})
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -150,7 +150,7 @@ app.post('/analyzetags'/*,auth*/,(req,res)=>{
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -175,11 +175,11 @@ app.post('/analyzeobjects'/*,auth*/,(req,res)=>{
         let file = req.files.photo.data;
         computerVisionClient.analyzeImageInStream(file,{visualFeatures: ['Objects']})
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -193,7 +193,7 @@ app.post('/analyzeobjects'/*,auth*/,(req,res)=>{
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -218,11 +218,11 @@ app.post('/analyze'/*,auth*/,(req,res)=>{
         let file = req.files.photo.data;
         computerVisionClient.analyzeImageInStream(file,{visualFeatures: ['Objects','Faces',"Brands","Color","Adult","Description","Tags"]})
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
@@ -236,7 +236,7 @@ app.post('/analyze'/*,auth*/,(req,res)=>{
             res.json(data);
             
         }).catch(err =>{
-            console.log(err);
+            // console.log(err);
 
             res.json(err);
             
